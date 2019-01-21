@@ -1,7 +1,11 @@
 class HighPassFilter
 
   def process(number)
-    5
+    if number < 10
+      number
+    else
+      10
+    end
   end
 
 end

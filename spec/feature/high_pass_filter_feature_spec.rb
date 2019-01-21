@@ -6,5 +6,10 @@ describe HighPassFilter do
       high_pass_filter = HighPassFilter.new
       expect(high_pass_filter.process(5)).to eq 5
     end
+
+    it "does process an effect on a number above threshold" do
+      high_pass_filter = HighPassFilter.new
+      expect(high_pass_filter.process(12)).to eq 10
+    end
   end
 end
